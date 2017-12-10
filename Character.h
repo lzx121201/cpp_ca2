@@ -45,7 +45,6 @@ void setCurrentexp(int currentexp);
 void setMaxexp(vector<int> maxexp);
 void setWeapon(Weapon w);
 void setCurrentLocation(int cl);
-void addExp(int exp);
 
 string getName();
 string getJon();
@@ -60,18 +59,18 @@ int getCurrentexp();
 vector<int> getMaxexp();
 Weapon getWeapon();
 int getCurrentLocation();
+
+void addExp(int exp);
 void displayInventory();
 void printCurrentLoaction(vector<Room> &rooms);
 void move(vector<Room> &rooms, int roomID);
-
 void fightMonster(Monster &m);
 void pickupItem(Potion &p);
 void pickupItem(Weapon &w);
 void equipWeapon(int i);
 void usePotion(int i);
 
-void addItem();
-void removeItem();
+
 
 ~Character();
 };

@@ -319,13 +319,6 @@ void Character::usePotion(int i)
 
 	}
 }
-void Character::addItem(){
-
-}
-
-void Character::removeItem(){
-
-}
 
 Character::~Character(){
 
