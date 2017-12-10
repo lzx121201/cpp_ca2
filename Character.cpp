@@ -1,5 +1,6 @@
 #include "Character.h"
 #include <iostream>
+#include <unistd.h>
 
 using namespace std;
 
@@ -189,7 +190,7 @@ void Character::fightMonster(Monster &m)
 	cout << "Battle start!" << endl;
 	int m_hp = m.getHp();
 	int m_attack = m.getAttack();
-	int m_name = m.getName();
+	string m_name = m.getName();
 	bool got_result = false;
 	bool won = false;
 	int i = 1;
@@ -198,14 +199,12 @@ void Character::fightMonster(Monster &m)
 		if(i % 2 != 0)
 		{
 			m_hp -= attack;
-			cout << "You attacked " << m_ name << ". Your current HP: "
-			<< to_string(currenthp) << "   " << m_name << "'s current HP: " << to_string(m_hp) << endl;
+			cout << "You attacked " << m_name << ". Your current HP: " << to_string(currenthp) << "   " << m_name << "'s current HP: " << to_string(m_hp) << endl;
 		}
 		else
 		{
 			currenthp -= m_attack;
-			cout << "You are attacked by " << m_ name << ". Your current HP: "
-			<< to_string(currenthp) << "   " << m_name << "'s current HP: " << to_string(m_hp) << endl;
+			cout << "You are attacked by " << m_name << ". Your current HP: " << to_string(currenthp) << "   " << m_name << "'s current HP: " << to_string(m_hp) << endl;
 		}
 
 		if(m_hp <= 0)
