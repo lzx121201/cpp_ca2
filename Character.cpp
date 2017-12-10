@@ -232,6 +232,93 @@ void Character::fightMonster(Monster &m)
 	}
 }
 
+void Character::pickupItem(Potion &p)
+{
+	if(potions.size() == 0)
+	{
+		potions.push_back(p);
+		potion_quantity.push_back(1);
+	}
+	else
+	{
+		int i = 0;
+		int pos = -1;
+		while(i < potions.size() && pos == -1)
+		{
+			if(potions[i].getName() == p.getName())
+			{
+				pos = i;
+			}
+			i++;
+		}
+		if(pos ==  -1)
+		{
+			potions.push_back(p);
+			potion_quantity.push_back(1);
+		}
+		else
+		{
+			potion_quantity[i] += 1;
+		}
+	}
+	cout << "Item added!" << endl;
+}
+
+void Character::pickupItem(Weapon &w)
+{
+	if(weapons.size() ==0)
+	{
+		weapons.push_back(w);
+	}
+	else
+	{
+		int i = 0;
+		int pos = -1;
+		while(i < weapons.size() && pos == -1)
+		{
+			if(weapons[i].getName() == w.getName())
+			{
+				pos = i;
+			}
+			i++;
+		}
+		if(pos ==  -1)
+		{
+			weapons.push_back(w);
+		}
+		else
+		{
+			cout << "You've already have the weapon." << endl;
+		}
+	}
+}
+
+void Character::equipWeapon(int i)
+{
+	int w_attack = weapons[i].getAttack();
+	attack += w_attack;
+	cout << "Your attack are now " << to_string(attack) << endl;
+
+}
+void Character::usePotion(int i)
+{
+	Potion p = potions[i];
+	int p_hp = p.getHp();
+	if(currenthp >= maxhp[lv-1])
+	{
+		cout << "You don't need any potion for now." << endl;
+	}
+	else
+	{
+		currenthp += p_hp;
+		if(currenthp >= maxhp[lv-1])
+		{
+			currenthp = maxhp[lv-1];
+		}
+		cout << "Your current HP: " << to_string(currenthp) << endl;
+
+	}
+}
 void Character::addItem(){
 
 }

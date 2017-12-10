@@ -225,9 +225,7 @@ void createChar(Character &c){
 
 void inGame(vector<Room> &rooms,vector<Potion> &potions,vector<Weapon> &weapons,vector<Monster> &monsters,Character &c){
         bool end = false;
-        // while(!end) {
-        //
-        // }
+        
         for (Room r : rooms)
         {
           cout << r.toString() <<endl;

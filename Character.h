@@ -19,6 +19,7 @@ int currenthp;
 vector<int> maxhp;
 int attack;
 vector<Potion> potions;
+vector<int> potion_quantity;
 vector<Weapon> weapons;
 int currentexp;
 vector<int> maxexp;
@@ -64,7 +65,10 @@ void printCurrentLoaction(vector<Room> &rooms);
 void move(vector<Room> &rooms, int roomID);
 
 void fightMonster(Monster &m);
-
+void pickupItem(Potion &p);
+void pickupItem(Weapon &w);
+void equipWeapon(int i);
+void usePotion(int i);
 
 void addItem();
 void removeItem();

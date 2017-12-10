@@ -7,9 +7,11 @@
 using namespace std;
 
 class Item{
-	private:
+	protected:
+		static int item_id; // Reference: http://www.bogotobogo.com/cplusplus/statics.php
+    int id;
   	string name;
-	string description;
+		string description;
 
 	public:
 		Item();
