@@ -1,0 +1,12 @@
+
+void Item::addItem(Item i){
+	inventory.push_back(i);
+}
+
+void Item::removeItem(Item i){
+	auto iter = find_if(inventory.begin(),inventory.end(),[i](inventory x){return x->getName() == i->getName();});
+	if(iter != inventory.end()){
+		inventory.erase(iter);
+	}
+
+}

@@ -1,0 +1,24 @@
+Type: weapon
+Name: one-hand sword
+Description: A one-handed sword made of steel. Increase 10 attack
+Function: 10
+
+Type: weapon
+Name: spear
+Description: A long spear made of steel and wood. Increase 20 attack
+Function: 20
+
+Type: weapon
+Name: two-hand sword
+Description: A two-handed sword made of steel. Increase 20 attack
+Function: 20
+
+Type: potion
+Name: Lv1 Potion
+Description: Increase 50 HP
+Function: 50
+
+Type: potion
+Name: Lv2 potion
+Description: Increase 100 HP
+Function: 100

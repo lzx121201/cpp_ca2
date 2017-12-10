@@ -1,0 +1,95 @@
+Room: 1
+Description: You are in the village.
+Direction: -1 2 -1 -1
+Weapon:
+Potion:
+Monster:
+Level Limit: 0
+
+Room: 2
+Description: Swampland
+Direction: 5 3 9 1
+Weapon: one-hand sword
+Potion:
+Monster: Lv1 Slime
+Level Limit: 1
+
+Room: 3
+Description: Hillside.
+Direction: 6 4 10 2
+Weapon: one-hand sword
+Potion: Lv1 potion
+Monster: Lv2 Blue Mushroom
+Level Limit: 2
+
+Room: 4
+Description: Deep Forest
+Direction: 7 -1 11 3
+Weapon: spear
+Potion:
+Monster: Lv3 Wild Boar
+Level Limit: 3
+
+Room: 5
+Description: Golden Beach
+Direction: -1 6 2 -1
+Weapon:
+Potion: Lv1 potion
+Monster: Lv3 seagull
+Level Limit: 3
+
+Room: 6
+Description: Graveyard
+Direction: -1 7 3 5
+Weapon:
+Potion:
+Monster: Lv4 Toothless zombie
+Level Limit: 4
+
+Room: 7
+Description: volcano
+Direction: 8 -1 4 6
+Weapon: two-handed sword
+Potion:
+Monster: Lv5 Burning Bulldog
+Level Limit: 5
+
+Room: 8
+Description: Fire Temple
+Direction: -1 -1 7 -1
+Weapon:
+Potion:
+Monster: Lv5 Zakum
+Level Limit: 5
+
+Room: 9
+Description: Urban City
+Direction: 2 10 -1 -1
+Weapon:
+Potion: Lv2 potion
+Monster: Lv6 Gangster A
+Level Limit: 6
+
+Room: 10
+Description: Cave Entrance
+Direction: 3 11 -1 9
+Weapon:
+Potion:
+Monster: Lv8 Dragon Guardian
+Level Limit: 8
+
+Room: 11
+Description: Pathway to the Heaven
+Direction: 4 -1 12 10
+Weapon:
+Potion:
+Monster: Lv9 Skeleton Dragon
+Level Limit: 9
+
+Room:12
+Description: Final Destination
+Direction: 11 -1 -1 -1
+Weapon:
+Potion:
+Monster: Lv10 Horntail
+Level Limit: 10

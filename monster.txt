@@ -1,0 +1,54 @@
+Name: Lv1 Slime
+Attack: 2
+HP: 10
+Exp: 10
+
+Name: Lv2 Blue Mushroom
+Attack: 4
+HP: 15
+Exp: 15
+
+Name: Lv3 Wild Boar
+Attack: 5
+HP: 20
+Exp: 20
+
+Name: Lv3 Seagull
+Attack: 5
+HP: 20
+Exp: 20
+
+Name: Lv4 Toothless Zombie
+Attack: 8
+HP: 30
+Exp: 30
+
+Name: Lv5 Burning Bulldog
+Attack: 10
+HP: 40
+Exp: 40
+
+Name: Lv5 Zakum
+Attack: 20
+HP: 100
+Exp: 100
+
+Name: Lv6 Gangster A
+Attack: 12
+HP: 60
+Exp: 60
+
+Name: Lv8 Dragon Guardian
+Attack: 15
+HP: 100
+Exp: 100
+
+Name: Lv9 Skeleton Dragon
+Attack: 20
+HP: 150
+Exp: 150
+
+Name: Lv10 Horntail
+Attack: 30
+HP: 300
+Exp: 500
